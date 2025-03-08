@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --main-color: #0e2431;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Navigation Menu CSS */
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.4s ease;
+}
+/* nav .sticky{
+    padding: 13px 0;
+    background: #4070f4;
+} */
+nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070f4;
+    padding-right: 20%;
+    text-decoration: none;
+}
+nav .navbar .menu{
+    display: flex;
+
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none; 
+    font-size: 30px;
+    font-weight: 500;   
+}
+nav .navbar .menu li a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+/* Hover animation for desktop view */
+nav .navbar .menu li a:hover{
+    color: #4070f4;
+}
+/* Hover for active navbar in mobile view */
+nav .navbar.active .menu li a:hover {
+    color: #4070f4;
+}
+nav .navbar .media-icons a{
+    font-size: 25px;
+    margin: 0 8px;
+    color: #4070f4;
+}
+
+/* Side Navigation Button css */
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 30px;
+    top: 20px;
+    display: none ;
+    z-index: 50;
+}
+nav .menu-btn{
+    color: #4070f4;
+}
+
+
+/* Home Section css */
+.home{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.home .home-content{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .home-content .up{
+    display: flex;
+}
+.home .home-content img{
+    border-radius: 1rem;
+    margin-left: 12rem ;
+    width: 60%;
+    top: 200px;
+}
+.home .text .text-one{
+    font-size: 25px;
+}
+.home .text .text-two{
+    font-size: 75px;
+    font-weight: 600;
+}
+.home .text .text-three{
+    font-size: 40px;
+}
+.home .button{
+    margin: 14px 0;
+}
+.home .button a{
+    outline: none;
+    color: #fff;
+    background: #4070f4;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.4 ease;
+}
+.home .button a:hover{
+    color: #4070f4;
+    background-color: #fff;
+    border-color: #4070f4;
+}
+
+.home .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 465px solid var(--main-color);
+    border-right: 465px solid var(--main-color);
+    border-bottom: 465px solid var(--main-color);
+    border-left: 465px solid transparent;
+
+}
+
+
+/* skills section  */
+.skills{
+    height: 100%;
+    width: 100%;
+}
+.skills .skills-details .topic{
+    font-family: 'Ubuntu', sans-seriff;
+    font-weight: 600;
+}
+.skills .skills-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills .skills-details .left{
+    display: flex;
+    flex-direction: column;
+}
+.skills .skills-details .left .p{
+    font-family: 'Ubuntu', sans-seriff;
+}
+.skills .skills-details .boxes{
+    display: flex;
+    flex-direction: row;
+}
+.skills .skills-details .boxes .row-1{
+    margin-right: 4rem;
+}
+
+
+/* Projects section css */
+.projects .content .title{
+    font-family: 'Ubuntu', sans-seriff;
+}
+.projects .content .project-details .boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+}
+.projects .content .project-details .box1{
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+}
+.projects .content .project-details .box2{
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+}
+.projects .content .project-details .box3{
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+}
+.projects .content .project-details .box1 img{
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+.projects .content .project-details .box2 img{
+    width: 60%;
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
+.projects .content .project-details .box3 img{
+    width: 50%;
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+}
+.projects .content .project-details .box1 .button{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.projects .content .project-details .box2 .button{
+    margin-left: 27rem;
+    margin-top: 1rem;
+}
+.projects .content .project-details .box3 .button{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.projects .content .project-details .box1 button{
+    outline: none;
+    color: #4070f4;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid #4070f4;
+    border-radius: 30px;
+    transition: all 0.4 ease;
+}
+.projects .content .project-details .box1 button:hover{
+    color: #fff;
+    background: #4070f4;
+}
+.projects .content .project-details .box2 button{
+    outline: none;
+    color: #4070f4;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid #4070f4;
+    border-radius: 30px;
+    transition: all 0.4 ease;
+}
+.projects .content .project-details .box2 button:hover{
+    color: #fff;
+    background: #4070f4;
+}
+.projects .content .project-details .box3 button{
+    outline: none;
+    color: #4070f4;
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid #4070f4;
+    border-radius: 30px;
+    transition: all 0.4 ease;
+}
+.projects .content .project-details .box3 button:hover{
+    color: #fff;
+    background: #4070f4;
+}
+
+
+/*Contact US*/
+.contact .content .details .leftBoxes .boxes{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    width: 40rem;
+
+}
+
+.contact .content .details{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem
+}
+
+.contact .content .details .rightBoxes{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    
+}
+
+
+
+
+/* Responsive Query Design */
+@media (max-width: 750px){
+    nav .navbar .menu{
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: #0e2431;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transition: all 0.5s ease;
+    }
+    nav .navbar.active .menu{
+        left: 0;
+    }
+    .navbar .menu li a{
+        display: block;
+        margin: 10px 0;
+        font-size: 23px;
+        color: #fff;
+    }
+    .navbar .media-icons a{
+        display: none;
+    }
+    nav .menu-btn,
+    .navbar .cancel-btn{
+        display: block;
+}
+.home .text .text-two{
+    font-size: 65px;
+}
+.home .text .text-three{
+    font-size: 35px;
+}
+.skills .skills-details .left{
+    margin-right: 1.5rem;
+}
+}
+ 
+@media (max-width: 510px){
+    .home .text .text-two{
+        font-size: 55px;
+    }
+    .home .text .text-three{
+        font-size: 33px;
+    }
+    .home .home-content .up{
+        flex-direction: column;
+    }
+    .home .home-content img{
+        width: 60%;
+        margin-left: 5rem;
+    }
+    .skills .skills-details{
+        flex-direction: column;
+    }
+    .skills .skills-details .boxes{
+        flex-direction: column;
+    }
+    .projects .content .project-details .boxes{
+        flex-direction: column;
+    }
+    .projects .content .project-details .box1 .button{
+        margin-left: 8rem;
+        margin-top: 1rem;
+    }
+    .projects .content .project-details .box2 .button{
+        margin-left: 8rem;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    .projects .content .project-details .box3 .button{
+        margin-left: 9rem;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    .projects .content .project-details .box2 img{
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
+    .projects .content .project-details .box3 img{
+        margin-left: 8rem;
+    }
+ 
+    
+}
+
+
+

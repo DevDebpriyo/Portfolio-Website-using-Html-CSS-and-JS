@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+    <!-- Navigation Panel -->
+    <nav class="z-50">
+        <div class="navbar">
+            <div class="logo"><a href="#">Portfolio.</a></div>
+            <ul class="text-purple-500 menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        
+    </nav>
+ 
+    <!-- Home Section start -->
+    <section class="home bg-slate-200" id="home">
+        <div class="z-0 overlay"></div>
+        <div class="home-content">
+            <div class="up">
+                <div class="text">
+                    <div class="text-one">Hello</div>
+                    <div class="text-two">I'm Debpriyo Ghosal</div>
+                    <div class="text-three">A Full-stack Web Developer</div>
+                </div>
+                <div class="z-40 itop">
+                    <img src="top.jpeg" alt="">
+                </div>
+            </div>
+            <div class="button">
+                <a href="#contact">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section  -->
+    <section class="py-16 bg-red-50 about" id="about">
+        <div class="px-6 mx-auto max-w-7xl content md:px-12 lg:px-20">
+            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl">About Me</h2>
+            <div class="about-details">
+                <div class="flex flex-col gap-12 items-center md:flex-row">
+                    <!-- Image Section -->
+                    <div class="flex-shrink-0 w-full md:w-1/2">
+                        <img src="img.png" alt="Profile Image" class="w-full rounded-lg shadow-lg">
+                    </div>
+                    <!-- Text Section -->
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-semibold text-gray-800">Designing Is My Passion</h3>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600 font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus, corporis dolorem commodi, porro libero doloribus id dolorum possimus voluptatem, placeat iusto hic nihil quisquam iure fugit molestias optio vero magnam perferendis recusandae? Exercitationem eveniet, neque minus maxime, ab et placeat ad, id quaerat praesentium odio facere amet obcaecati accusamus nam non fugiat vitae sed earum? Saepe mollitia sapiente dolores.</p>
+                        <a href="#contact" class="inline-block px-6 py-3 mt-6 font-medium text-white bg-blue-600 rounded-lg shadow-lg transition duration-300 hover:bg-white hover:border-2 hover:border-blue-600 hover:text-blue-600">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+
+    <!-- Skills section -->
+     <section class="px-16 bg-red-100 skills" id="skills">
+        <div class="px-6 mx-auto max-w-7xl content md:px-12 lg:px-20">
+            <div class="mb-10 text-center title"><h2 class="pt-10 text-8xl font-bold text-gray-800">My Skills</h2></div>
+            <div class="mt-20 skills-details">
+                <!-- left section -->
+                <div class="mr-60 left">
+                    <div class="text-4xl font-semibold topic">Skills Reflect Our Knowledge</div>
+                    <p class="pb-4 text-2xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aliquid molestias nihil repellat tempore minus ipsa error magni. Incidunt, amet ea ipsa rem doloremque modi. Esse deserunt atque harum animi.</p>
+                </div>
+                <!-- right section -->
+                <div class="boxes">
+                    <div class="row-1">
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">HTML</div></div>
+                            <div class="mt-2 mb-4 text-6xl font-bold text-blue-500 num">90%</div>
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">CSS</div></div>
+                            <div class="mt-2 text-6xl font-bold text-blue-500 num">70%</div>
+                    </div>
+                    <div class="row-2">
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">JavaScript</div></div>
+                            <div class="mt-2 mb-4 text-6xl font-bold text-blue-500 num">60%</div>
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">MongoDB</div></div>
+                            <div class="mt-2 text-6xl font-bold text-blue-500 num">80%</div>
+                    </div>
+                    <div class="ml-12 row-3">
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">React</div></div>
+                            <div class="mt-2 mb-4 text-6xl font-bold text-blue-500 num">60%</div>
+                        <div class="text-center box">
+                            <div class="text-3xl font-semibold text-gray-800 topic">Python</div></div>
+                            <div class="mt-2 text-6xl font-bold text-blue-500 num">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- Projects section -->
+     <section class="projects" id="projects">
+        <div class="content">
+            <div class="title"><h1 class="pt-5 text-8xl font-bold text-center text-gray-800">Projects</h1></div>
+            <div class="project-details">
+                <!-- Boxes -->
+                <div class="boxes">
+                    <!-- Box 1 -->
+                    <div class="mx-3 mb-4 box1">
+                        <div class="imt">
+                            <img src="game.jpeg" alt="Project 1">
+                        </div>
+                        <div class="mt-8 text-part">
+                            <div class="mt-2 text-3xl text-center title">Project 1</div>
+                            <div class="mt-3 text-center pj-details"><span class="text-xl">A 2D platformer game made using PyGame library of Python</span></div>
+                        </div>
+                        <div class="button">
+                            <button>Github Repo</button>
+                        </div>
+                    </div> 
+                    <!-- Box 2 -->
+                    <div class="mx-3 mb-4 box2">
+                        <div class="imt">
+                            <img src="nike.png" alt="Project 2">
+                        </div>
+                        <div class="text-part">
+                            <div class="mt-3 text-3xl text-center title">Project 2</div>
+                            <div class="mt-3 text-center pj-details"><span class="text-xl">A clone of Nike website made using Html, CSS and JavaScript</span></div>
+                        </div>
+                        <div class="button">
+                            <button>Github Repo</button>
+                        </div>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="mx-3 mb-4 box3">
+                        <div class="imt">
+                            <img src="p3.jpeg" alt="Project 3">
+                        </div>
+                        <div class="text-part">
+                            <div class="mt-2 text-3xl text-center title">Project 3</div>
+                        <div class="mt-2 text-center pj-details"><span class="text-xl">A responsive travel webpage made using Html, CSS and JavaScript</span></div> 
+                        </div>
+                        <div class="button">
+                            <button>Github Repo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Contact US  -->
+     <section class="bg-orange-200 contact" id="contact">
+        <div class="content">
+            <h2 class="pt-4 text-4xl text-center text-blue-500">Get in Touch</h2>
+            <div class="title"><h1 class="text-8xl font-bold text-center text-gray-800">Contact Me</h1></div>
+            <div class="details">
+                <div class="pl-4 leftBoxes">
+                    <div class="px-3 py-5 text-center rounded-xl bg-gray-950 box1 boxes" id="box1">
+                        <i class="fab fa-google"></i>
+                        <h2>Email</h2>
+                        <p>user@gmail.com</p>
+                        <a class="font-semibold text-red-500" href="user@gmail.com">Write Me➜</a>
+                    </div>
+                    <div class="px-3 py-5 text-center rounded-xl boxes bg-gray-950" id="box2">
+                        <i class="fab fa-twitter"></i>
+                        <h2>Twitter</h2>
+                        <p>Debpriyo Ghosal</p>
+                        <a class="font-semibold text-red-500" href="twitter.com">Write Me➜</a>
+                    </div>
+                    <div class="px-3 py-5 text-center rounded-xl boxes bg-gray-950" id="box3">
+                        <i class="fab fa-linkedin"></i>
+                        <h2>LinkedIn</h2>
+                        <p>Debpriyo Ghosal</p>
+                        <a class="font-semibold text-red-500" href="linkedin.com">Write Me➜</a>
+                    </div>
+                </div>
+                <div class="m-16 space-y-16 rightBoxes">
+                    <input type="Email" placeholder="Email" class="h-16 text-center rounded-xl border-2 border-black"/>
+                    <input type="Phone" placeholder="Phone" class="h-16 text-center rounded-xl border-2 border-black"/>
+                    <textarea name="Message" id="Message" placeholder="Message" class="py-16 h-44 text-center rounded-xl border-2 border-black"></textarea>
+                    <button class="w-56 h-16 font-normal bg-red-500 rounded-xl sendButton">💌Send Message</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
