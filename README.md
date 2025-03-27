@@ -13,7 +13,7 @@ This is a sample portfolio website I built to test my skills and add as a projec
 - **CSS** (Tailwind CSS)  
 - **JavaScript**  
 - **Netlify** (for hosting)  
-
+ 
 ## 🔗 Live Demo  
 Check out the live version here: https://debpriyo-ghosal.netlify.app/
 
