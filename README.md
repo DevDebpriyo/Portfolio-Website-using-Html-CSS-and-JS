@@ -6,7 +6,7 @@ This is a sample portfolio website I built to test my skills and add as a projec
 - Scrolling navigation  
 - Interactive UI with Tailwind CSS  
 - Social media links  
-- Contact form  
+- Contact form   
 
 ## 📂 Technologies Used  
 - **HTML**  
