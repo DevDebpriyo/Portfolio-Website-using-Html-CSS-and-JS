@@ -8,7 +8,7 @@ This is a sample portfolio website I built to test my skills and add as a projec
 - Social media links  
 - Contact form   
      
-## 📂 Technologies Used  
+## 📂 Technologies Used   
 - **HTML**  
 - **CSS** (Tailwind CSS)  
 - **JavaScript**  
