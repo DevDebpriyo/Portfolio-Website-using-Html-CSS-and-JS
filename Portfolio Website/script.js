@@ -1,6 +1,6 @@
 //! Side Navigation Bar code
 let menuBtn = document.querySelector(".menu-btn");
-let cancelBtn = document.querySelector(".cancel-btn"); 
+let cancelBtn = document.querySelector(".cancel-btn");  
 let navBar = document.querySelector(".navbar")
 
 menuBtn.onclick = function(){
